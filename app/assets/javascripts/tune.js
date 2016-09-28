@@ -10,9 +10,6 @@ $(function(){
   .done(function( data ) {
     $.each(data, function(index, value){
       console.log(index, value);
-
-
-      // console.info(value);
     })
   });
 
@@ -28,8 +25,6 @@ $(function(){
   .done(function( data ) {
     $.each(data, function(index, value){
       console.log(index, value)
-
-      // console.info(value);
     })
   });
 
