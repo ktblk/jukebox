@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  $('.your-class').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 5,
+
+  });
+});
+
+$('.your-class').on('afterChange', function (event, slick, currentSlide) {
+console.log(event, slick, currentSlide);
+});

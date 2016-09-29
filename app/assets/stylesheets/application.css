@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+ .your-class .slick-center {
+     -moz-transform: scale(1.08);
+     -ms-transform: scale(1.08);
+     -o-transform: scale(1.08);
+     -webkit-transform: scale(1.08);
+     color: #e67e22;
+     opacity: 1;
+     transform: scale(1.08);
+     margin-top: 30px;
+     background-color: #0085B2;
+
+   }
+
+   .your-class .slick-active:-1 {
+       -moz-transform: scale(1.08);
+       -ms-transform: scale(1.08);
+       -o-transform: scale(1.08);
+       -webkit-transform: scale(1.08);
+       color: #e67e22;
+       opacity: 1;
+       transform: scale(1.08);
+       margin-top: 30px;
+
+     }
+
+
+   /*.your-class .slick-active {
+       -moz-transform: scale(1.00);
+       -ms-transform: scale(1.00);
+       -o-transform: scale(1.00);
+       -webkit-transform: scale(1.00);
+       color: #e67e22;
+       opacity: 1;
+       transform: scale(1.08);
+
+     }*/
+
+     /*.album-container {
+       /*height: 400px;*/
+       /*width: max-width;
+       background: lightblue;
+     }*/
+
+     /*.album-art {
+       padding: 20px;
+     }*/
