@@ -15,15 +15,35 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+// $(document).ready(function(){
+//   $('.your-class').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 5,
+//
+//   });
+// });
+
+// $(function(){
+//   $('.your-class').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 5,
+//   }).on('afterChange', function (event, slick, currentSlide) {
+//     console.log(event, slick, currentSlide);
+//   });
+//
+
+// $('.your-class').on('afterChange', function (event, slick, currentSlide) {
+// console.log(event, slick, currentSlide);
+// });
+
+$(function(){
   $('.your-class').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 5,
-
+  }).on('afterChange', function (event, slick, currentSlide) {
+    console.log(event, slick, currentSlide);
   });
-});
-
-$('.your-class').on('afterChange', function (event, slick, currentSlide) {
-console.log(event, slick, currentSlide);
-});
+})
