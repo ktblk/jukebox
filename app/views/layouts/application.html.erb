@@ -6,16 +6,126 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <!-- BOOTSTRAP -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
   </head>
 
   <body>
+
+    <div id="carousel">
+     <div class="album-container" id="item-1">
+
+        <div class="album-art">
+          <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+        </div>
+
+        <div class="album-body">
+          <h4 id="songtitle">IF YOU'RE READING THIS IT'S TOO LATE</h4>
+          <p id="artist">
+            DRAKE
+          </p>
+        </div>
+
+      </div>
+
+
+       <div class="album-container" id="item-3">
+
+          <div class="album-art">
+            <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+          </div>
+
+          <div class="album-body">
+            <h4 id="songtitle">IF YOU'RE READING THIS IT'S TOO LATE</h4>
+            <p id="artist">
+              DRAKE
+            </p>
+          </div>
+
+        </div>
+
+
+         <div class="album-container" id="item-3">
+
+            <div class="album-art">
+              <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+            </div>
+
+            <div class="album-body">
+              <h4 id="songtitle">IF YOU'RE READING THIS IT'S TOO LATE</h4>
+              <p id="artist">
+                DRAKE
+              </p>
+            </div>
+
+          </div>
+
+
+           <div class="album-container" id="item-4">
+
+              <div class="album-art">
+                <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+              </div>
+
+              <div class="album-body">
+                <h4 id="songtitle">IF YOU'RE READING THIS IT'S TOO LATE</h4>
+                <p id="artist">
+                  DRAKE
+                </p>
+              </div>
+
+            </div>
+
+
+             <div class="album-container" id="item-5">
+
+                <div class="album-art">
+                  <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+                </div>
+
+                <div class="album-body">
+                  <h4 id="songtitle">IF YOU'RE READING THIS IT'S TOO LATE</h4>
+                  <p id="artist">
+                    DRAKE
+                  </p>
+                </div>
+
+              </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+    </button> -->
+
+   <!-- <a href="#" id="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> | <a href="#" id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
+
+<div id="buttons">
+   <button type="button" class="btn btn-default btn-md" href="#" id="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+   <button type="button" class="btn btn-default btn-md" href="#" id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+ </div>
+
+
+    <div class="split-right">
+      <!-- <h2>Sample callback output</h2> -->
+      <div id="callback-output">
+
+      </div>
+    </div>
+
+
+
+
+
     <!-- <div class="your-class">
       <div><h3>1</h3></div>
       <div><h3>2</h3></div>
@@ -23,7 +133,7 @@
       <div><h3>4</h3></div>
       <div><h3>5</h3></div>
     </div> -->
-    <div class="your-class">
+    <!-- <div class="your-class"> -->
       <!-- <div class="album-container">
 
         <div class="album-art">
@@ -39,7 +149,37 @@
 
       </div> -->
 
-      <div class="album-container">
+      <!-- <div class="album-container"> -->
+
+        <!-- <div class="album-art">
+          <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+        </div>
+
+        <div class="album-body">
+          <h4>If You're Reading This It's Too Late</h4>
+          <p>
+            Drake
+          </p>
+        </div>
+
+      </div> -->
+
+      <!-- <div class="album-container"> -->
+
+        <!-- <div class="album-art">
+          <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
+        </div>
+
+        <div class="album-body">
+          <h4>If You're Reading This It's Too Late</h4>
+          <p>
+            Drake
+          </p>
+        </div>
+
+      </div> -->
+
+      <!-- <div class="album-container">
 
         <div class="album-art">
           <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
@@ -52,24 +192,9 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="album-container">
-
-        <div class="album-art">
-          <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
-        </div>
-
-        <div class="album-body">
-          <h4>If You're Reading This It's Too Late</h4>
-          <p>
-            Drake
-          </p>
-        </div>
-
-      </div>
-
-      <div class="album-container">
+      <!-- <div class="album-container">
 
         <div class="album-art">
           <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
@@ -82,24 +207,9 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="album-container">
-
-        <div class="album-art">
-          <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
-        </div>
-
-        <div class="album-body">
-          <h4>If You're Reading This It's Too Late</h4>
-          <p>
-            Drake
-          </p>
-        </div>
-
-      </div>
-
-      <div class="album-container">
+      <!-- <div class="album-container">
 
         <div class="album-art">
           <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
@@ -112,9 +222,9 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="album-container">
+      <!-- <div class="album-container">
 
         <div class="album-art">
           <img class="img-responsive" src="https://images.rapgenius.com/44d39b851f2206191171087994719e62.1000x1000x1.jpg" alt="" />
@@ -127,9 +237,9 @@
           </p>
         </div>
 
-      </div>
+      </div> -->
 
-    </div>
+    <!-- </div> -->
     <%= yield %>
   </body>
 </html>

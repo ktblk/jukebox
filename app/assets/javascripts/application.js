@@ -15,6 +15,68 @@
 //= require turbolinks
 //= require_tree .
 
+
+$(document).ready(function() {
+     var carousel = $("#carousel").waterwheelCarousel({
+       flankingItems: 4,
+       movingToCenter: function ($item) {
+         $('#callback-output').append('movingToCenter: ' + $item.attr('id') + '<br/>');
+         console.log($item);
+       },
+       movedToCenter: function ($item) {
+         $('#callback-output').append('movedToCenter: ' + $item.attr('id') + '<br/>');
+         console.log($item);
+        //  $item.next().css({top: "0px"});
+        //   $item.prev().css({top: "0px"});
+         $item.next().next().css({top: "10px"});
+         $item.next().next().next().css({top: "10px"});
+       },
+       movingFromCenter: function ($item) {
+         $('#callback-output').append('movingFromCenter: ' + $item.attr('id') + '<br/>');
+         console.log($item);
+       },
+       movedFromCenter: function ($item) {
+         $('#callback-output').append('movedFromCenter: ' + $item.attr('id') + '<br/>');
+         console.log($item);
+       },
+       clickedCenter: function ($item) {
+         $('#callback-output').append('clickedCenter: ' + $item.attr('id') + '<br/>');
+         console.log($item);
+       }
+     });
+     $('#prev').bind('click', function () {
+       carousel.prev();
+       $('#callback-output').html("");
+       return false
+     });
+     $('#next').bind('click', function () {
+       carousel.next();
+       return false;
+     });
+     $('#reload').bind('click', function () {
+       newOptions = eval("(" + $('#newoptions').val() + ")");
+       carousel.reload(newOptions);
+       return false;
+     });
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // $(document).ready(function(){
 //   $('.your-class').slick({
 //     centerMode: true,
@@ -37,13 +99,20 @@
 // $('.your-class').on('afterChange', function (event, slick, currentSlide) {
 // console.log(event, slick, currentSlide);
 // });
-
-$(function(){
-  $('.your-class').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 5,
-  }).on('afterChange', function (event, slick, currentSlide) {
-    console.log(event, slick, currentSlide);
-  });
-})
+// SLICK
+// $(function(){
+//   $('.your-class').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 5,
+//   }).on('afterChange', function (event, slick, currentSlide) {
+//     console.log(event, slick, currentSlide);
+//   });
+// })
+//
+// $('.selector').slick({
+//   nextArrow: '<i class="fa fa-arrow-right"></i>',
+//   prevArrow: '<i class="fa fa-arrow-left"></i>',
+// // add the rest of your options here
+// });
+// SLICK

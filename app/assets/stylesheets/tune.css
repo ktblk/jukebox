@@ -5,14 +5,49 @@
 
 .album-container {
   /*height: 400px;*/
-  /*width: 500px;*/
-  height: max-height;
+  /*width: 100px;*/
+  height: 250px;
+  width: 200px;
   /*background: lightblue;*/
   margin: 4px;
   box-shadow: 2px 1px 2px 1px lightgray;
-  border-radius: 4px;
+  border-radius: 2px;
+  font-family: Avenir;
 }
 
 .album-art {
-  padding: 20px;
+  /*box-shadow: 1px 1px 1px 1px darkgray;*/
+  /*padding: 5px;*/
+  height: 120px;
+  width: 130px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*margin-top: 20px*/
+  padding-top: 20px;
+}
+
+.album-body {
+  margin-top: 45px;
+  text-align: center;
+  /*padding-left: 2px;*/
+  font-family: Roboto;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+#songtitle {
+  color: #0085B2;
+}
+
+#artist {
+  color: black;
+}
+
+
+
+.fixed-panel {
+  min-height: 5;
+  max-height: 5;
+  overflow-y: scroll;
 }
