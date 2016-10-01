@@ -22,14 +22,15 @@ $(document).ready(function() {
        movingToCenter: function ($item) {
          $('#callback-output').append('movingToCenter: ' + $item.attr('id') + '<br/>');
          console.log($item);
+
        },
        movedToCenter: function ($item) {
          $('#callback-output').append('movedToCenter: ' + $item.attr('id') + '<br/>');
          console.log($item);
-        //  $item.next().css({top: "0px"});
-        //   $item.prev().css({top: "0px"});
-         $item.next().next().css({top: "10px"});
-         $item.next().next().next().css({top: "10px"});
+         $item.next().css({top: "10px"});
+         $item.prev().css({top: "10px"});
+        //  $item.next().next().css({top: "0px"});
+        //  $item.prev().prev().css({top: "0px"});
        },
        movingFromCenter: function ($item) {
          $('#callback-output').append('movingFromCenter: ' + $item.attr('id') + '<br/>');
@@ -38,6 +39,7 @@ $(document).ready(function() {
        movedFromCenter: function ($item) {
          $('#callback-output').append('movedFromCenter: ' + $item.attr('id') + '<br/>');
          console.log($item);
+
        },
        clickedCenter: function ($item) {
          $('#callback-output').append('clickedCenter: ' + $item.attr('id') + '<br/>');

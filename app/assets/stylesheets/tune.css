@@ -15,6 +15,12 @@
   font-family: Avenir;
 }
 
+div.album-container:not(.carousel-center) {
+  /*width: 300px;*/
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
 .album-art {
   /*box-shadow: 1px 1px 1px 1px darkgray;*/
   /*padding: 5px;*/
@@ -42,12 +48,4 @@
 
 #artist {
   color: black;
-}
-
-
-
-.fixed-panel {
-  min-height: 5;
-  max-height: 5;
-  overflow-y: scroll;
 }

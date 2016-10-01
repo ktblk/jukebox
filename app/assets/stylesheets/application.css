@@ -40,8 +40,8 @@
      color: white !important;
    }
 
-
-   /*#prev {
+/*
+   #prev {
      float: left;
      margin-top: 0px;
    }
@@ -52,14 +52,14 @@
    }*/
 
    #prev {
-    position: aboslute;
+    position: absolute;
     left: 15px;
-    top: 20px;
+    top: 150px;
    }
    #next {
-    position: aboslute;
+    position: absolute;
     right: 15px;
-    top: 20px;
+    top: 150px;
    }
 
 
