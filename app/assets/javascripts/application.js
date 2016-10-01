@@ -15,53 +15,87 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function(){
+// Apply the script when the document is ready (minimum):
+  $('#boutique').boutique({
+    behind_opacity:	1,
+    back_opacity:	1,
+    hovergrowth:	0.0,
+    speed:	800,
+    // move_on_click: true;
+  });
 
-$(document).ready(function() {
-     var carousel = $("#carousel").waterwheelCarousel({
-       flankingItems: 4,
-       movingToCenter: function ($item) {
-         $('#callback-output').append('movingToCenter: ' + $item.attr('id') + '<br/>');
-         console.log($item);
+// Or with custom options:
+  // $('#boutique').boutique({
+  //   // container_width:	650,
+  //   // front_img_width:	300,
+  //   // front_img_height:	200,
+  //   // starter:	3,
+  //   speed:	900,
+  //   hovergrowth:	0.2,
+  //   behind_opacity:	1,
+  //   back_opacity:	1,
+  //   behind_size:	0.6,
+  //   back_size:	0.4,
+  //   // autoplay:	true,
+  //   // autoplay_interval:	4000,
+  //   // freescroll:	false,
+  //   // move_on_click:	true
+  // });
+});
 
-       },
-       movedToCenter: function ($item) {
-         $('#callback-output').append('movedToCenter: ' + $item.attr('id') + '<br/>');
-         console.log($item);
-         $item.next().css({top: "10px"});
-         $item.prev().css({top: "10px"});
-        //  $item.next().next().css({top: "0px"});
-        //  $item.prev().prev().css({top: "0px"});
-       },
-       movingFromCenter: function ($item) {
-         $('#callback-output').append('movingFromCenter: ' + $item.attr('id') + '<br/>');
-         console.log($item);
-       },
-       movedFromCenter: function ($item) {
-         $('#callback-output').append('movedFromCenter: ' + $item.attr('id') + '<br/>');
-         console.log($item);
 
-       },
-       clickedCenter: function ($item) {
-         $('#callback-output').append('clickedCenter: ' + $item.attr('id') + '<br/>');
-         console.log($item);
-       }
-     });
-     $('#prev').bind('click', function () {
-       carousel.prev();
-       $('#callback-output').html("");
-       return false
-     });
-     $('#next').bind('click', function () {
-       carousel.next();
-       return false;
-     });
-     $('#reload').bind('click', function () {
-       newOptions = eval("(" + $('#newoptions').val() + ")");
-       carousel.reload(newOptions);
-       return false;
-     });
-   });
 
+
+
+
+
+// $(document).ready(function() {
+//      var carousel = $("#carousel").waterwheelCarousel({
+//        flankingItems: 4,
+//        movingToCenter: function ($item) {
+//          $('#callback-output').append('movingToCenter: ' + $item.attr('id') + '<br/>');
+//          console.log($item);
+//
+//        },
+//        movedToCenter: function ($item) {
+//          $('#callback-output').append('movedToCenter: ' + $item.attr('id') + '<br/>');
+//          console.log($item);
+//          $item.next().css({top: "10px"});
+//          $item.prev().css({top: "10px"});
+//         //  $item.next().next().css({top: "0px"});
+//         //  $item.prev().prev().css({top: "0px"});
+//        },
+//        movingFromCenter: function ($item) {
+//          $('#callback-output').append('movingFromCenter: ' + $item.attr('id') + '<br/>');
+//          console.log($item);
+//        },
+//        movedFromCenter: function ($item) {
+//          $('#callback-output').append('movedFromCenter: ' + $item.attr('id') + '<br/>');
+//          console.log($item);
+//
+//        },
+//        clickedCenter: function ($item) {
+//          $('#callback-output').append('clickedCenter: ' + $item.attr('id') + '<br/>');
+//          console.log($item);
+//        }
+//      });
+//      $('#prev').bind('click', function () {
+//        carousel.prev();
+//        $('#callback-output').html("");
+//        return false
+//      });
+//      $('#next').bind('click', function () {
+//        carousel.next();
+//        return false;
+//      });
+//      $('#reload').bind('click', function () {
+//        newOptions = eval("(" + $('#newoptions').val() + ")");
+//        carousel.reload(newOptions);
+//        return false;
+//      });
+//    });
+//
 
 
 
