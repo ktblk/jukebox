@@ -70,58 +70,50 @@ $(function () {
 
 })
 
-//
+
+
+// function tableFill(value){
+//   return `<tr>
+//         <td class="col-sm-1" id="tracknumber" ><div id="num">${value.song_order}</div></td>
+//         <td class="col-sm-1" id="star"><a href="" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip" ><i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 18px"></i></a></td>
+//         <td class="col-sm-3" id="songname">${value.song_name}</td>`
+//         if (${value.song_label} != null){
+//           `<td class="col-sm-1" id="category1"><div id="explicit">${value.song_label[0]}</div></td>`
+//         } else if (${value.song_label.length} == 2}) {
+//           `<td class="col-sm-7" id="category2"><div id="type">${value.song_label[1]}</div></td>`
+//         }
+//         `<td class="col-sm-1" id="songtime">${value.song_duration}</td>
+//       </tr>`;
+// }
+
+$(function(){
+  $.ajax({
+      url: "https://stg-resque.hakuapp.com/songs?album_id=1",
+      method: "GET",
+      dataType: 'jsonp'
+
+  })
+  .done(function( data ) {
+    $.each(data, function(index, value){
+      console.log(value);
+      // $('#paneltable').append(tableFill(value));
+    })
+  });
+
+})
+
 // $(function(){
 //   $.ajax({
-//       url: "https://stg-resque.hakuapp.com/songs?album_id=1",
+//       url: "https://stg-resque.hakuapp.com/songs?album_id=2",
 //       method: "GET",
 //       dataType: 'jsonp'
 //
 //   })
 //   .done(function( data ) {
 //     $.each(data, function(index, value){
-//       console.log(index, value)
+//       console.log(value);
+//       // $('#paneltable').append(tableFill(value));
 //     })
-//   });
-//
-// })
-// $("button").on("click", function(){
-//     $("button").css("color", "#00698C");
-// });
-
-// $(document).ready(function(){
-//     $('[data-toggle="tooltip"]').tooltip();
-// });
-
-// function tableFill(value){
-//   return `<tr>
-//     <td id="tracknumber">1</td>
-//     <td id="star"><a href="" data-toggle="tooltip" title="MARK AS FAVORITE"><i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 15px"></i></a></td>
-//     <td id="songname">Song name</td>
-//     <td id="category">Explicit?</td>
-//     <td>Type of song</td>
-//     <td id="songtime">Time</td>
-//   </tr>`;
-//
-// }
-//
-// $(function(){
-//
-//   $.ajax({
-//     url: "https://stg-resque.hakuapp.com/songs?album_id=1",
-//     method: "GET",
-//     dataType: 'jsonp'
-//
-//   })
-//   .done(function( data ) {
-//     $.each(data, function(index, value){
-//       console.info(value.id);
-//
-//       $('.songtable').append(tableFill(value));
-//     })
-//   })
-//   .success(function(){
-//     initBout();
 //   });
 //
 // })
