@@ -15,29 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-// $(document).ready(function(){
-// Apply the script when the document is ready (minimum):
-
-// Or with custom options:
-  // $('#boutique').boutique({
-  //   // container_width:	650,
-  //   // front_img_width:	300,
-  //   // front_img_height:	200,
-  //   // starter:	3,
-  //   speed:	900,
-  //   hovergrowth:	0.2,
-  //   behind_opacity:	1,
-  //   back_opacity:	1,
-  //   behind_size:	0.6,
-  //   back_size:	0.4,
-  //   // autoplay:	true,
-  //   // autoplay_interval:	4000,
-  //   // freescroll:	false,
-  //   // move_on_click:	true
-  // });
-// });
-
-
 
 
 

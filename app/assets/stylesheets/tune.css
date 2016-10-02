@@ -3,33 +3,12 @@
   They will automatically be included in application.css.
 */
 
-.album-container {
-  /*height: 400px;*/
-  /*width: 100px;*/
-  height: 260px;
-  width: 200px;
-  /*background: lightblue;*/
-  margin: 4px;
-  box-shadow: 2px 1px 2px 1px lightgray;
-  border-radius: 2px;
-  /*font-family: Avenir;*/
-}
-
-/*div.album-container:not(.carousel-center) {
-  /*width: 300px;*/
-  /*transform: scale(1) !important;*/
-  /*opacity: 1 !important;*/
-/*}*/
-
 .album-art {
-  /*box-shadow: 1px 1px 1px 1px darkgray;*/
-  /*padding: 5px;*/
   height: 160px;
   width: 170px;
   display: block;
     margin-left: auto;
     margin-right: auto;
-  /*margin-top: 20px*/
   padding-top: 20px;
 }
 
@@ -67,7 +46,8 @@
   height: 280px;
   margin-top: 326px;
   overflow: scroll;
-  margin-left: 23.1%;
+  margin-left: 25%;
+  margin-right: 25%;
   background-color: #f0f3f5;
   font-family: Roboto;
   text-transform: uppercase;
@@ -117,7 +97,8 @@
 }
 
 #explicit {
-  height: 16px;
+  /*height: 16px;*/
+  padding: 3px;
   width: 60px;
   background-color: #DDDDDD;
   border-radius: 3%;
@@ -125,7 +106,8 @@
 }
 
 #type {
-  height: 16px;
+  /*height: 16px;*/
+  padding: 3px;
   width: 80px;
   background-color: #DDDDDD;
   border-radius: 3%;
@@ -154,18 +136,28 @@
   color: black;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th  {
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th, .table-hover tr:hover #songtime, .table-hover tbody tr:hover #songname {
   background-color: #0085B2;
   color: white;
 }
+.table-hover tbody tr:hover #explicit {
+  background-color: #90B9C9;
+}
+.table-hover tbody tr:hover #type {
+  background-color: #90B9C9;
+}
 
-#songname:hover {
+div.tooltip-inner {
   color: white;
+  background-color: darkgrey;
+  font-size: 7px;
+  font-family: Roboto;
 }
-#songtime:hover {
-  color:white;
+div.tooltip-arrow {
+  border-top-color: darkgrey !important;
 }
-/*.fa-star {
-  font-size: 18px;
-  color: #DDDDDD;
-}*/
+
+.yellow-star {
+
+  color: #D9D900 !important;
+}

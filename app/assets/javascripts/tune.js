@@ -49,25 +49,27 @@ $(function(){
     initCarousel();
   });
 
-  $('a').on("click", function(event) {
-    event.preventDefault();
-    console.log("here");
-    $(this).find('.fa-star').css({ color: "#D9D900" });
 
+  $(document).on("click", "#star a", function(event) {
+    event.preventDefault();
+    var star = $(this).find('.fa-star');
+    console.log(star);
+    if (star.hasClass("yellow-star")) {
+      star.removeClass("yellow-star");
+    }else {
+      star.addClass("yellow-star");
+    }
 });
-// $('.fa-star').off("click", function(event) {
-//   event.preventDefault();
-//   console.log("here");
-//   $(this).find('.fa-star').css({ color: "gray" });
-//
-// });
-// $('a').on("click", function(event) {
-//   event.preventDefault();
-//   console.log("back");
-//   $('.fa-star').css({ color: "#DDDDDD" });
-// });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({
+      container: 'body',
+      trigger: 'hover'
+  })
+})
 
 })
+
 //
 // $(function(){
 //   $.ajax({
