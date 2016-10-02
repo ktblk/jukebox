@@ -1,4 +1,4 @@
-function initBout(){
+function initCarousel(){
   $('#boutique').boutique({
     container_width:	700,
     front_img_width:	170,
@@ -46,8 +46,26 @@ $(function(){
     })
   })
   .success(function(){
-    initBout();
+    initCarousel();
   });
+
+  $('a').on("click", function(event) {
+    event.preventDefault();
+    console.log("here");
+    $(this).find('.fa-star').css({ color: "#D9D900" });
+
+});
+// $('.fa-star').off("click", function(event) {
+//   event.preventDefault();
+//   console.log("here");
+//   $(this).find('.fa-star').css({ color: "gray" });
+//
+// });
+// $('a').on("click", function(event) {
+//   event.preventDefault();
+//   console.log("back");
+//   $('.fa-star').css({ color: "#DDDDDD" });
+// });
 
 })
 //

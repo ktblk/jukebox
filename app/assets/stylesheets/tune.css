@@ -64,7 +64,7 @@
 
 #panel1 {
   width: 555px;
-  height: 230px;
+  height: 280px;
   margin-top: 326px;
   overflow: scroll;
   margin-left: 23.1%;
@@ -74,6 +74,7 @@
   box-shadow: 2px 1px 2px 1px lightgray;
   font-weight: bolder;
   font-size: 12px;
+  position: absolute;
 }
 
 .fa-arrow-right {
@@ -120,6 +121,7 @@
   width: 60px;
   background-color: #DDDDDD;
   border-radius: 3%;
+  vertical-align: middle;
 }
 
 #type {
@@ -127,6 +129,7 @@
   width: 80px;
   background-color: #DDDDDD;
   border-radius: 3%;
+  vertical-align: middle;
 }
 
 #category1 {
@@ -149,6 +152,18 @@
 #songtime {
   font-weight: 1000;
   color: black;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th  {
+  background-color: #0085B2;
+  color: white;
+}
+
+#songname:hover {
+  color: white;
+}
+#songtime:hover {
+  color:white;
 }
 /*.fa-star {
   font-size: 18px;
