@@ -13,15 +13,15 @@
  *= require_tree .
  *= require_self
  */
-
  #boutique{
-   display: none; /* Start invisible until the plugin is loaded */
-   margin: 0;
-   position: absolute;
-   top: 20%;
-   left: 48.5%;
-   transform: translate(-50%, -50%);
- }
+  display: none; /* Start invisible until the plugin is loaded */
+  margin: 0;
+  position: absolute;
+  top: 8em;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-family: Roboto;
+}
 
  /* The frames */
  #boutique li{
@@ -30,8 +30,9 @@
    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   height: 340px;
-   width: 290px;
+   height: 290px;
+   width: 230px;
+   border-radius: 2px;
  }
 
  /* The most frontal item */
@@ -45,13 +46,18 @@
  }
 
  .boutique{
-    margin:0; padding:0; position:relative; z-index:1
+    margin:0;
+    padding:0;
+    position:relative;
+    z-index:1
   }
  .boutique li{
    margin:0; padding:0; list-style:none;
    position:absolute; z-index:1;
    display:none;
    border-width:0;
+   height: 320px;
+   width: 250px;
  }
  .boutique img{
    border:0;
@@ -67,11 +73,85 @@
    cursor:default;
    margin:0;
  }
- .boutique h6{ cursor:default }
- .boutique a, .boutique a:hover{ cursor:default; text-decoration:none; outline:none }
- .boutique img, .boutique li, .boutique a{ -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none; -webkit-user-drag:none; -moz-user-drag:none; user-drag:none }
- .boutique.rtl h6, .boutique.rtl span{ text-align:right }
+ .boutique h6{
+   cursor:default;
+  }
+ .boutique a, .boutique a:hover{
+   cursor:default;
+   text-decoration:none;
+   outline:none;
+  }
+ .boutique img, .boutique li, .boutique a{
+   -webkit-user-select:none;
+   -khtml-user-select:none;
+   -moz-user-select:none;
+   -o-user-select:none;
+   user-select:none;
+   -webkit-user-drag:none;
+   -moz-user-drag:none;
+   user-drag:none;
+ }
+ .boutique.rtl h6, .boutique.rtl span{
+   text-align:right;
+ }
 
+.frame3 {
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0;
+background-color: #0085B2 !important;
+transition: 0.07s;
+}
+
+ .frame3 #songtitle {
+   padding-top: 3px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 0;
+   color: white !important;
+   text-transform: uppercase;
+ }
+
+
+ .frame3 #artist {
+   padding-top: 0px;
+   padding-left: 3px;
+   padding-right: 3px;
+   padding-bottom: 0;
+   color: white !important;
+   text-transform: uppercase;
+ }
+
+ #prev {
+  position: absolute;
+  left: 15px;
+  top: 150px;
+ }
+ #next {
+  position: absolute;
+  right: 15px;
+  top: 150px;
+ }
+
+.clicked {
+  background-color: #00698C;
+}
+
+
+ /*#boutique {
+     width: 800px;
+     height: 300px;
+     display: relative;
+     margin: 0 auto;
+   }*/
+
+   /*#boutique .zoomed {
+     transition: 0.3s;
+     position: relative !important;
+     top: 75px !important;
+     background-color: #0085B2;
+   }*/
 
 
 

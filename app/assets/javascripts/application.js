@@ -15,15 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+// $(document).ready(function(){
 // Apply the script when the document is ready (minimum):
-  $('#boutique').boutique({
-    behind_opacity:	1,
-    back_opacity:	1,
-    hovergrowth:	0.0,
-    speed:	800,
-    // move_on_click: true;
-  });
 
 // Or with custom options:
   // $('#boutique').boutique({
@@ -42,7 +35,7 @@ $(document).ready(function(){
   //   // freescroll:	false,
   //   // move_on_click:	true
   // });
-});
+// });
 
 
 

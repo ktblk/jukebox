@@ -6,26 +6,26 @@
 .album-container {
   /*height: 400px;*/
   /*width: 100px;*/
-  height: 250px;
+  height: 260px;
   width: 200px;
   /*background: lightblue;*/
   margin: 4px;
   box-shadow: 2px 1px 2px 1px lightgray;
   border-radius: 2px;
-  font-family: Avenir;
+  /*font-family: Avenir;*/
 }
 
-div.album-container:not(.carousel-center) {
+/*div.album-container:not(.carousel-center) {
   /*width: 300px;*/
-  transform: scale(1) !important;
-  opacity: 1 !important;
-}
+  /*transform: scale(1) !important;*/
+  /*opacity: 1 !important;*/
+/*}*/
 
 .album-art {
   /*box-shadow: 1px 1px 1px 1px darkgray;*/
   /*padding: 5px;*/
-  height: 120px;
-  width: 130px;
+  height: 160px;
+  width: 170px;
   display: block;
     margin-left: auto;
     margin-right: auto;
@@ -34,18 +34,30 @@ div.album-container:not(.carousel-center) {
 }
 
 .album-body {
-  margin-top: 45px;
+  margin-top: 25px;
   text-align: center;
   /*padding-left: 2px;*/
   font-family: Roboto;
-  letter-spacing: 1px;
-  font-weight: lighter;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 #songtitle {
+  padding-top: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 0;
   color: #0085B2;
+  font-family: Roboto;
+  text-transform: uppercase;
 }
 
 #artist {
+  padding-top: 0px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0;
   color: black;
+  font-family: Roboto;
+  text-transform: uppercase;
 }
