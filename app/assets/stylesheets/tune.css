@@ -84,7 +84,7 @@
   color: lightgrey;
 }
 
-#prev:hover{
+#prev:hover {
   background-color: #0085B2;
   border-style: none;
 }
@@ -102,7 +102,55 @@
   color: white;
 }
 
-/*a .fa-star {
+#num {
+  height: 18px;
+  width: 18px;
+  background-color: #90B9C9;
+  border-radius: 5%;
+}
+
+#tracknumber {
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#explicit {
+  height: 16px;
+  width: 60px;
+  background-color: #DDDDDD;
+  border-radius: 3%;
+}
+
+#type {
+  height: 16px;
+  width: 80px;
+  background-color: #DDDDDD;
+  border-radius: 3%;
+}
+
+#category1 {
+  text-align: center;
+  font-size: 9px;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+#category2 {
+  font-size: 9px;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+#songname {
+  color: #0085B2;
+  font-weight: 1000;
+}
+
+#songtime {
+  font-weight: 1000;
+  color: black;
+}
+/*.fa-star {
   font-size: 18px;
   color: #DDDDDD;
 }*/
