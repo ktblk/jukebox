@@ -1,6 +1,6 @@
 function initBout(){
   $('#boutique').boutique({
-    container_width:	800,
+    container_width:	700,
     front_img_width:	170,
     front_img_height:	160,
     behind_opacity:	1,
@@ -67,4 +67,8 @@ $(function(){
 // })
 // $("button").on("click", function(){
 //     $("button").css("color", "#00698C");
+// });
+
+// $(document).ready(function(){
+//     $('[data-toggle="tooltip"]').tooltip();
 // });

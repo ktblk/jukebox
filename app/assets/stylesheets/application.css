@@ -30,8 +30,8 @@
    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
    -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   height: 290px;
-   width: 230px;
+   height: 275px;
+   width: 210px;
    border-radius: 2px;
  }
 
@@ -105,7 +105,7 @@ transition: 0.07s;
 }
 
  .frame3 #songtitle {
-   padding-top: 3px;
+   padding-top: 5px;
    padding-left: 5px;
    padding-right: 5px;
    padding-bottom: 0;
@@ -125,18 +125,14 @@ transition: 0.07s;
 
  #prev {
   position: absolute;
-  left: 15px;
-  top: 150px;
+  left: 20px;
+  top: 190px;
  }
  #next {
   position: absolute;
-  right: 15px;
-  top: 150px;
+  right: 20px;
+  top: 190px;
  }
-
-.clicked {
-  background-color: #00698C;
-}
 
 
  /*#boutique {

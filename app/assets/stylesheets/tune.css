@@ -43,7 +43,7 @@
 }
 
 #songtitle {
-  padding-top: 0px;
+  padding-top: 5px;
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: 0;
@@ -61,3 +61,48 @@
   font-family: Roboto;
   text-transform: uppercase;
 }
+
+#panel1 {
+  width: 555px;
+  height: 230px;
+  margin-top: 326px;
+  overflow: scroll;
+  margin-left: 23.1%;
+  background-color: #f0f3f5;
+  font-family: Roboto;
+  text-transform: uppercase;
+  box-shadow: 2px 1px 2px 1px lightgray;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.fa-arrow-right {
+  color: lightgrey;
+}
+
+.fa-arrow-left {
+  color: lightgrey;
+}
+
+#prev:hover{
+  background-color: #0085B2;
+  border-style: none;
+}
+
+#next:hover {
+  background-color: #0085B2;
+  border-style: none;
+}
+
+.fa-arrow-right:hover {
+  color: white;
+}
+
+.fa-arrow-left:hover {
+  color: white;
+}
+
+/*a .fa-star {
+  font-size: 18px;
+  color: #DDDDDD;
+}*/
