@@ -72,3 +72,36 @@ $(function(){
 // $(document).ready(function(){
 //     $('[data-toggle="tooltip"]').tooltip();
 // });
+
+// function tableFill(value){
+//   return `<tr>
+//     <td id="tracknumber">1</td>
+//     <td id="star"><a href="" data-toggle="tooltip" title="MARK AS FAVORITE"><i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 15px"></i></a></td>
+//     <td id="songname">Song name</td>
+//     <td id="category">Explicit?</td>
+//     <td>Type of song</td>
+//     <td id="songtime">Time</td>
+//   </tr>`;
+//
+// }
+//
+// $(function(){
+//
+//   $.ajax({
+//     url: "https://stg-resque.hakuapp.com/songs?album_id=1",
+//     method: "GET",
+//     dataType: 'jsonp'
+//
+//   })
+//   .done(function( data ) {
+//     $.each(data, function(index, value){
+//       console.info(value.id);
+//
+//       $('.songtable').append(tableFill(value));
+//     })
+//   })
+//   .success(function(){
+//     initBout();
+//   });
+//
+// })

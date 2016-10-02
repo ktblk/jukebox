@@ -106,8 +106,8 @@ transition: 0.07s;
 
  .frame3 #songtitle {
    padding-top: 5px;
-   padding-left: 5px;
-   padding-right: 5px;
+   padding-left: 8px;
+   padding-right: 8px;
    padding-bottom: 0;
    color: white !important;
    text-transform: uppercase;
@@ -116,8 +116,8 @@ transition: 0.07s;
 
  .frame3 #artist {
    padding-top: 0px;
-   padding-left: 3px;
-   padding-right: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
    padding-bottom: 0;
    color: white !important;
    text-transform: uppercase;
