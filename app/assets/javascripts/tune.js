@@ -1,3 +1,4 @@
+//gets album information from API and outputs it according to htmlFill function; initializes star toggle click functionality for favoriting; also initializes carousel function pending success of ajax call to API
 $(function(){
 
   $.ajax({
@@ -28,10 +29,13 @@ $(function(){
 
 })
 
+// supplies function getSong() with the frame of the carousel to tie in the linkage between the carousel card (frame) and the songs that are populating
 function pre_move_callback(anchor, instanceid, frame){
   getSong(frame);
 }
 
+
+// getting song list by album id and returning it formatted in html via tableFill; ordering songs by song_order; running tooltip functionality for each favorite star
 function getSong(albumId){
 
     $.ajax({
@@ -78,7 +82,7 @@ function tableFill(value){
             </a>
           </div>
       </div>
-      <div class="col-sm-7 set-padding-0">
+      <div class="col-sm-8 set-padding-0">
         <span id="songname">${value.song_name}</span>
         ${category}
       </div>
@@ -101,7 +105,7 @@ function htmlFill(value){
    </li>`;
 
 }
-
+// function that initializes the carousel, provided API ajax was successful (see top of document)
 function initCarousel(){
   $('#boutique').boutique({
     container_width:	750,
