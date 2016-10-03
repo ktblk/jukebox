@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'tune/index'
+  root :to => 'tune#index'
 
   get 'tune/show'
 
