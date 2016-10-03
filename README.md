@@ -50,4 +50,6 @@ Models created: album, song and label
 - JavaScript call would include a POST to the database for each model.
 
 - Could also be completed with HTTParty (gem bundled in this app).
+
+Filling the html can be done still with a looping JS function, calling from the database for each variable it needs to interpolate.  However, it could also be done via erb and Rails/Ruby.
 <!-- BONUS 1 -->
