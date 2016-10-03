@@ -33,6 +33,7 @@
   padding-bottom: 0;
   color: #0085B2;
   font-family: Roboto;
+    font-size: 21px;
   text-transform: uppercase;
 }
 
@@ -43,16 +44,17 @@
   padding-right: 10px;
   padding-bottom: 0;
   color: black;
+  font-size: 15px;
   font-family: Roboto;
   text-transform: uppercase;
 }
 
 // songlist container for li's of songs
 #songlist {
-  width: 580px;
+  width: 645px;
   height: auto;
   margin: 0 auto;
-  top: 40px;
+  top: 43.3px;
   overflow-y: auto;
   margin: 0 auto;
   background-color: #f0f3f5;
@@ -78,7 +80,7 @@
 #prev {
  position: absolute;
  left: 20px;
- top: 230px;
+ top: 250px;
  &:hover {
    background-color: #0085B2 !important;
    border-style: none !important;
@@ -99,7 +101,7 @@
 #next {
  position: absolute;
  right: 20px;
- top: 230px;
+ top: 250px;
  &:hover {
    background-color: #0085B2 !important;
    border-style: none  !important;
@@ -120,8 +122,9 @@
 #num {
   background-color: #90B9C9;
   border-radius: 5%;
-  padding: 2px 6px;
+  padding: 3px 7px;
   color: white;
+  font-size: 14.5px;
 }
 
 // // song category boxes
@@ -134,7 +137,7 @@
   border-radius: 3%;
   vertical-align: middle;
   margin: 3px;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: bolder;
   letter-spacing: .5px;
 
@@ -145,6 +148,7 @@
   background-color: white !important;
   color: black;
   font-weight: bolder;
+  font-size: 14.5px;
 }
 
 
@@ -155,6 +159,7 @@
   letter-spacing: .5px;
   font-weight: bolder;
   margin-left: 0;
+  font-size: 15px;
 }
 
 // customizing songlist panel on-hover background color and text changes
@@ -187,7 +192,7 @@
 div.tooltip-inner {
   color: white;
   background-color: darkgrey;
-  font-size: 7px;
+  font-size: 9px;
   font-family: Roboto;
 }
 div.tooltip-arrow {

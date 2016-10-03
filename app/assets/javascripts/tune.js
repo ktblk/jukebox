@@ -79,11 +79,11 @@ function tableFill(value){
           '</div>' +
           '<div class="text-center set-padding-0" id="star">' +
             '<a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">' +
-              '<i class="fa fa-star" aria-hidden="true" style="font-size: 20px; color: #DDDDDD;"></i>' +
+              '<i class="fa fa-star" aria-hidden="true" style="font-size: 24px; color: #DDDDDD;"></i>' +
             '</a>' +
           '</div>' +
       '</div>' +
-      '<div class="col-sm-8 set-padding-0">' +
+      '<div class="col-sm-9 set-padding-0">' +
         '<span id="songname">' + value.song_name + '</span>'
         + category +
       '</div>' +
@@ -107,7 +107,7 @@ function htmlFill(value){
 // function that initializes the carousel, provided API ajax was successful (see top of document)
 function initCarousel(){
   $('#boutique').boutique({
-    container_width:	750,
+    container_width:	830,
     front_img_width:	170,
     front_img_height:	160,
     behind_opacity:	1,
