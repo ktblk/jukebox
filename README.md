@@ -8,6 +8,7 @@
 Can be found at: https://desolate-spire-98317.herokuapp.com/
 
 ====To initialize/repeat:====
+
 1. Create a Controller and subsequent view (e.g. 'tune/index')
 2. Import a carousel library.  This may include, but is not limited to, JavaScript and CSS documentation that it may include.  These will initialize if you require tree throughout the application.
 3. The carousel library ultimately used in this process was Boutique, which was malleable enough to get it to generate correctly for the mock up rendering.  (Others not recommended: slickjs and waterwheel, which both present difficulty in terms of targeting)
@@ -22,29 +23,32 @@ Can be found at: https://desolate-spire-98317.herokuapp.com/
 
 
 ====DESCRIPTION====
-Jukebox app running from api for album, artist and song data.  Utilizing Ruby on Rails framework, html/css/JS/jQuery.  Bootstrap for styling.
 
-Through process the following libraries were used for carousel functionality:
-- slickjs
-- waterwheel
-- boutique
+- Jukebox app running from api for album, artist and song data.  Utilizing Ruby on Rails framework, html/css/JS/jQuery.  Bootstrap for styling.
+
+- Through process the following libraries were used for carousel functionality:
+ - slickjs
+ - waterwheel
+ - boutique
   - Boutique is in the final version, but others can be seen through commits and were removed because of rigid functionality prohibiting effective usage.
 
-Bootstrap was employed for styling to ensure usability across all platforms, including IE8 if necessary.
+- Bootstrap was employed for styling to ensure usability across all platforms, including IE8 if necessary.
 
-Data obtained via API - one for artists that populates the carousel, and then based on the album_id for the data per album (populated in the panel).  Javascript functions were used to create the call, as well as to populate the html via functions htmlFill() and tableFill().
+- Data obtained via API - one for artists that populates the carousel, and then based on the album_id for the data per album (populated in the panel).  Javascript functions were used to create the call, as well as to populate the html via functions htmlFill() and tableFill().
 
-htmlFill() populates the carousel, tableFill() populates the panel for the songs.
+- htmlFill() populates the carousel, tableFill() populates the panel for the songs.
 
-html/css/scss were used primarily for styling, with some jQuery necessary to toggle options like the pressing and depressing of the star 'a' tag for color change and favoriting purposes.
+- html/css/scss were used primarily for styling, with some jQuery necessary to toggle options like the pressing and depressing of the star 'a' tag for color change and favoriting purposes.
 
-Backend is Rails framework and utilizes the asset pipeline to institute all required outside sources (e.g. jQuery, Bootstrap, Font Awesome, etc.)
+- Backend is Rails framework and utilizes the asset pipeline to institute all required outside sources (e.g. jQuery, Bootstrap, Font Awesome, etc.)
+
 ====DESCRIPTION====
 
 
 
 ====BONUS 1====
-Models created: album, song and label
+
+- Models created: album, song and label
 
 - Albums has_many :songs and draws from this API ("https://stg-resque.hakuapp.com/albums.json").  Its data table includes: album.name, album.artist_name, and album.cover_photo_url.  It would call to the JSON on the page, looping and creating an id each time an album was saved.
 
@@ -58,12 +62,14 @@ Models created: album, song and label
 
 - Could also be completed with HTTParty (gem bundled in this app).
 
-Filling the html can be done still with a looping JS function, calling from the database for each variable it needs to interpolate.  However, it could also be done via erb and Rails/Ruby.
+- Filling the html can be done still with a looping JS function, calling from the database for each variable it needs to interpolate.  However, it could also be done via erb and Rails/Ruby.
+
 ====BONUS 1====
 
 ====BONUS 2====
-Models created: album, song, label and user
-Controllers: Song, user
+
+- Models created: album, song, label and user
+- Controllers: Song, user
 
 - Albums has_many :songs.
 
@@ -72,6 +78,7 @@ Controllers: Song, user
 - Labels belongs_to :songs.
 
 - User model and controller generated to facilitate login.  This could be completed with Rails framework.  Bcrypt gem used to do this process to encrypt password.  In order for the user to favorite songs specifically, the user has_many :songs.  Validation would have to include checking if user = current_user in order to assure that the favorites are, in fact, that of the user.
+
 ====BONUS 2====
 
 ====
