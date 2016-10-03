@@ -69,16 +69,16 @@ function tableFill(value){
   return `<li class="list-group-item clearfix">
       <span class="badge" id="badge-custom">${value.song_duration}</span>
       <div class="col-sm-2 set-padding-0">
-          <div class="col-sm-6 text-center">
+          <div class="col-sm-1 text-center">
             <span id="num">${value.song_order}</span>
           </div>
-          <div class=" text-center set-padding-0" id="star">
+          <div class="text-center set-padding-0" id="star">
             <a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">
               <i class="fa fa-star" aria-hidden="true" style="font-size: 20px; color: #DDDDDD;"></i>
             </a>
           </div>
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-7 set-padding-0">
         <span id="songname">${value.song_name}</span>
         ${category}
       </div>

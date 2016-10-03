@@ -53,7 +53,7 @@
   height: auto;
   margin: 0 auto;
   top: 40px;
-  overflow: scroll;
+  overflow-y: auto;
   margin: 0 auto;
   background-color: #f0f3f5;
   font-family: Roboto;
@@ -161,6 +161,7 @@
   font-weight: 900;
   letter-spacing: .5px;
   font-weight: bolder;
+  margin-left: 0;
 }
 
 // customizing songlist panel on-hover background color and text changes
