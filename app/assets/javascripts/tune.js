@@ -104,7 +104,7 @@ function htmlFill(value){
 
 function initCarousel(){
   $('#boutique').boutique({
-    container_width:	600,
+    container_width:	750,
     front_img_width:	170,
     front_img_height:	160,
     behind_opacity:	1,
