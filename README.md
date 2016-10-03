@@ -4,7 +4,6 @@
 ====
 ![alt tag](app/assets/images/haku2.jpg)
 ====
-![alt tag](app/assets/images/haku3.jpg)
 
 ====To initialize/repeat:====
 1. Create a Controller and subsequent view (e.g. 'tune/index')
@@ -72,3 +71,8 @@ Controllers: Song, user
 
 - User model and controller generated to facilitate login.  This could be completed with Rails framework.  Bcrypt gem used to do this process to encrypt password.  In order for the user to favorite songs specifically, the user has_many :songs.  Validation would have to include checking if user = current_user in order to assure that the favorites are, in fact, that of the user.
 ====BONUS 2====
+
+====
+![alt tag](app/assets/images/haku3.jpg)
+====
+![alt tag](app/assets/images/haku4.jpg)
