@@ -10,9 +10,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161003203745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "albums", force: :cascade do |t|
+    t.string   "name"
+    t.string   "artist_name"
+    t.string   "cover_photo_url"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "labels", force: :cascade do |t|
+    t.integer  "songs_id"
+    t.string   "song_label"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["songs_id"], name: "index_labels_on_songs_id", using: :btree
+  end
+
+  create_table "songs", force: :cascade do |t|
+    t.integer  "albums_id"
+    t.string   "song_name"
+    t.integer  "song_order"
+    t.string   "song_duration"
+    t.integer  "users_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.boolean  "favorite"
+    t.index ["albums_id"], name: "index_songs_on_albums_id", using: :btree
+    t.index ["users_id"], name: "index_songs_on_users_id", using: :btree
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_foreign_key "labels", "songs", column: "songs_id"
+  add_foreign_key "songs", "albums", column: "albums_id"
+  add_foreign_key "songs", "users", column: "users_id"
 end

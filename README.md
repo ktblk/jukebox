@@ -53,3 +53,16 @@ Models created: album, song and label
 
 Filling the html can be done still with a looping JS function, calling from the database for each variable it needs to interpolate.  However, it could also be done via erb and Rails/Ruby.
 <!-- BONUS 1 -->
+
+<!-- BONUS 2 -->
+Models created: album, song, label and user
+Controllers: Song, user
+
+- Albums has_many :songs.
+
+- Songs belongs_to :albums, belongs_to ;users, and has_many :labels.  In order to save the actual "favorite" action, a favorite column was added to the Song model.  It is a boolean.  Depending on a click function, that would be designated via jQuery and JavaScript, it could be toggled between True and False.  If True, it would retain the yellow color of the star.  If false, the star would perform like all the others (grey off hover and white on row hover).  This would have to be a function that targeted the specific click - a "this within that" sort of function where the specific star (that specific 'a' tag was linked to that specific song in the database.)  Clicking it could link that 'a' tag to, for instance, that specific song's id.  From that, you can target by finding that id and then updating the boolean value to either True or False depending if it is a click or an un-click function.
+
+- Labels belongs_to :songs.
+
+- User model and controller generated to facilitate login.  This could be completed with Rails framework.  Bcrypt gem used to do this process to encrypt password.  In order for the user to favorite songs specifically, the user has_many :songs.  Validation would have to include checking if user = current_user in order to assure that the favorites are, in fact, that of the user.
+<!-- BONUS 2 -->
