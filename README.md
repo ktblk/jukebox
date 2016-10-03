@@ -1,6 +1,10 @@
 # README
 
 ![alt tag](app/assets/images/haku.jpg)
+====
+![alt tag](app/assets/images/haku2.jpg)
+====
+![alt tag](app/assets/images/haku3.jpg)
 
 ====To initialize/repeat:====
 1. Create a Controller and subsequent view (e.g. 'tune/index')
