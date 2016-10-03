@@ -78,6 +78,7 @@
 
 // button for previous at left of screen; functions for mouse off, on click and on hover
 #prev {
+  z-index: 99999;
  position: absolute;
  left: 20px;
  top: 250px;
@@ -99,6 +100,7 @@
 
 // button for next at right of screen; functions for mouse off, on click and on hover
 #next {
+z-index: 99999;
  position: absolute;
  right: 20px;
  top: 250px;

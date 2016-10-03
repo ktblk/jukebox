@@ -27,6 +27,7 @@ html, body {
   /*right: 10%;*/
   font-family: Roboto;
   height: 44vh !important;
+  left: -36px;
 }
 
  /* The frames */
