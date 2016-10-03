@@ -74,7 +74,7 @@ function tableFill(value){
           </div>
           <div class=" text-center set-padding-0" id="star">
             <a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">
-              <i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 20px"></i>
+              <i class="fa fa-star" aria-hidden="true" style="font-size: 20px; color: #DDDDDD;"></i>
             </a>
           </div>
       </div>
