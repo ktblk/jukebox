@@ -70,39 +70,38 @@ function tableFill(value){
       category += '<span id="explicit">'+ value +'</span>';
     })
   }
-  return `<li class="list-group-item clearfix">
-      <span class="badge" id="badge-custom">${value.song_duration}</span>
-      <div class="col-sm-2 set-padding-0">
-          <div class="col-sm-1 text-center">
-            <span id="num">${value.song_order}</span>
-          </div>
-          <div class="text-center set-padding-0" id="star">
-            <a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">
-              <i class="fa fa-star" aria-hidden="true" style="font-size: 20px; color: #DDDDDD;"></i>
-            </a>
-          </div>
-      </div>
-      <div class="col-sm-8 set-padding-0">
-        <span id="songname">${value.song_name}</span>
-        ${category}
-      </div>
-  </li>`;
+
+  return '<li class="list-group-item clearfix">' +
+      '<span class="badge" id="badge-custom">' + value.song_duration + '</span>' +
+      '<div class="col-sm-2 set-padding-0">' +
+          '<div class="col-sm-1 text-center">' +
+            '<span id="num">' + value.song_order + '</span>' +
+          '</div>' +
+          '<div class="text-center set-padding-0" id="star">' +
+            '<a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">' +
+              '<i class="fa fa-star" aria-hidden="true" style="font-size: 20px; color: #DDDDDD;"></i>' +
+            '</a>' +
+          '</div>' +
+      '</div>' +
+      '<div class="col-sm-8 set-padding-0">' +
+        '<span id="songname">' + value.song_name + '</span>'
+        + category +
+      '</div>' +
+  '</li>';
 }
 
 function htmlFill(value){
-  return `<li>
-     <div class="album-art">
-       <img class="img-responsive" src="${value.cover_photo_url}" alt="" />
-     </div>
+  return '<li>' +
+     '<div class="album-art">' +
+       '<img class="img-responsive" src=' + value.cover_photo_url + ' alt="" />' +
+     '</div>' +
 
-     <div class="album-body">
-       <h4 id="songtitle">${value.name}</h4>
-       <p id="artist">
-         ${value.artist_name}
-       </p>
-     </div>
+     '<div class="album-body">' +
+       '<h4 id="songtitle">'+ value.name +'</h4>' +
+       '<p id="artist">' + value.artist_name + '</p>' +
+     '</div>' +
 
-   </li>`;
+   '</li>';
 
 }
 // function that initializes the carousel, provided API ajax was successful (see top of document)
