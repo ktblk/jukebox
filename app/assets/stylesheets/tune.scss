@@ -41,20 +41,20 @@
   text-transform: uppercase;
 }
 
-#panel1 {
+#songlist {
   width: 555px;
-  height: 280px;
-  margin-top: 326px;
+  height: auto;
+  margin: 0 auto;
+  top: 28px;
   overflow: scroll;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: 0 auto;
   background-color: #f0f3f5;
   font-family: Roboto;
   text-transform: uppercase;
   box-shadow: 2px 1px 2px 1px lightgray;
   font-weight: bolder;
   font-size: 12px;
-  position: absolute;
+  position: relative;
 }
 
 .fa-arrow-right {
@@ -65,44 +65,66 @@
   color: lightgrey;
 }
 
-#prev:hover {
-  background-color: #0085B2;
-  border-style: none;
+#prev {
+ position: absolute;
+ left: 20px;
+ top: 190px;
+ &:hover {
+   background-color: #0085B2 !important;
+   border-style: none !important;
+   .fa-arrow-left {
+     color: white !important;
+   }
+ }
+ &:active, &:focus {
+   background: #00698C !important;
+   border-style: none !important;
+   .fa-arrow-left {
+     color: white !important;
+   }
+ }
 }
 
-#next:hover {
-  background-color: #0085B2;
-  border-style: none;
-}
-
-.fa-arrow-right:hover {
-  color: white;
-}
-
-.fa-arrow-left:hover {
-  color: white;
+#next {
+ position: absolute;
+ right: 20px;
+ top: 190px;
+ &:hover {
+   background-color: #0085B2 !important;
+   border-style: none  !important;
+   .fa-arrow-right {
+     color: #fff  !important;
+   }
+ }
+ &:active, &:focus {
+   background: #00698C !important;
+   border-style: none !important;
+   .fa-arrow-right {
+     color: white !important;
+   }
+ }
 }
 
 #num {
-  height: 18px;
-  width: 18px;
   background-color: #90B9C9;
   border-radius: 5%;
-}
-
-#tracknumber {
-  color: white;
-  text-align: center;
-  font-weight: bolder;
+  padding: 6px 8px;
 }
 
 #explicit {
-  /*height: 16px;*/
-  padding: 3px;
-  width: 60px;
+  padding: 7px;
+  width: 70px;
   background-color: #DDDDDD;
   border-radius: 3%;
   vertical-align: middle;
+  margin: 3px;
+  font-size: 8px;
+  font-weight: bolder;
+}
+
+#badge-custom {
+  background-color: white !important;
+  color: black;
 }
 
 #type {
@@ -136,15 +158,22 @@
   color: black;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th, .table-hover tr:hover #songtime, .table-hover tbody tr:hover #songname {
-  background-color: #0085B2;
-  color: white;
-}
-.table-hover tbody tr:hover #explicit {
-  background-color: #90B9C9;
-}
-.table-hover tbody tr:hover #type {
-  background-color: #90B9C9;
+#songlist {
+  li {
+    &:hover {
+      background-color: #0085B2;
+      #songname,  #num, #badge-custom {
+        color: white;
+      }
+      #badge-custom {
+        background-color: #0085B2 !important;
+      }
+      #explicit {
+        background-color: #90B9C9;
+        color: white;
+      }
+    }
+  }
 }
 
 div.tooltip-inner {
@@ -158,6 +187,5 @@ div.tooltip-arrow {
 }
 
 .yellow-star {
-
   color: #D9D900 !important;
 }

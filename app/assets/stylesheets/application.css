@@ -13,14 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+  height: 100%;
+}
  #boutique{
   display: none; /* Start invisible until the plugin is loaded */
-  margin: 0;
+  margin: 0 auto;
   position: absolute;
-  top: 8em;
-  left: 47%;
-  transform: translate(-50%, -50%);
+  top: 2em;
+  /*left: 10%;*/
   font-family: Roboto;
+  height: 50vh !important;
 }
 
  /* The frames */
@@ -48,8 +52,9 @@
  .boutique{
     margin:0;
     padding:0;
-    position:relative;
-    z-index:1
+    position:relative !important;
+    z-index:1;
+    left: -2%;
   }
  .boutique li{
    margin:0; padding:0; list-style:none;
@@ -122,16 +127,7 @@ background-color: #0085B2 !important;
    text-transform: uppercase;
  }
 
- #prev {
-  position: absolute;
-  left: 20px;
-  top: 190px;
- }
- #next {
-  position: absolute;
-  right: 20px;
-  top: 190px;
- }
 
-
- 
+.set-padding-0{
+  padding: 0 !important;
+}
