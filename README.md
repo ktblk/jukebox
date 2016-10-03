@@ -19,6 +19,7 @@ Can be found at: https://desolate-spire-98317.herokuapp.com/
 8. Format appropriately using CSS (or SCSS).  The tune.js file contains the formatting associated with the elements not given by the carousel.
 9. Application.css is related to the Boutique carousel css given.
 10. Institute buttons and link them to the given Boutique next and previous functions.  Customize them appropriately using SCSS or CSS.
+
 ==================
 
 
