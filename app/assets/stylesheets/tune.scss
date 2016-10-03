@@ -3,6 +3,9 @@
   They will automatically be included in application.css.
 */
 
+// CAROUSEL/PANEL/BUTTON/TOGGLES CUSTOMIZATION
+
+// album art display settings
 .album-art {
   height: 160px;
   width: 170px;
@@ -12,6 +15,7 @@
   padding-top: 20px;
 }
 
+// carousel card div containing title and artist
 .album-body {
   margin-top: 25px;
   text-align: center;
@@ -21,6 +25,7 @@
   font-weight: bold;
 }
 
+// carousel song title display
 #songtitle {
   padding-top: 5px;
   padding-left: 8px;
@@ -31,6 +36,7 @@
   text-transform: uppercase;
 }
 
+// carousel artist display
 #artist {
   padding-top: 0px;
   padding-left: 10px;
@@ -41,11 +47,12 @@
   text-transform: uppercase;
 }
 
+// songlist container for li's of songs
 #songlist {
-  width: 555px;
+  width: 515px;
   height: auto;
   margin: 0 auto;
-  top: 28px;
+  top: 40px;
   overflow: scroll;
   margin: 0 auto;
   background-color: #f0f3f5;
@@ -57,6 +64,7 @@
   position: relative;
 }
 
+// arrows for mouse off appearance inside buttons
 .fa-arrow-right {
   color: lightgrey;
 }
@@ -65,10 +73,11 @@
   color: lightgrey;
 }
 
+// button for previous at left of screen; functions for mouse off, on click and on hover
 #prev {
  position: absolute;
  left: 20px;
- top: 190px;
+ top: 225px;
  &:hover {
    background-color: #0085B2 !important;
    border-style: none !important;
@@ -85,10 +94,11 @@
  }
 }
 
+// button for next at right of screen; functions for mouse off, on click and on hover
 #next {
  position: absolute;
  right: 20px;
- top: 190px;
+ top: 225px;
  &:hover {
    background-color: #0085B2 !important;
    border-style: none  !important;
@@ -105,61 +115,56 @@
  }
 }
 
+// song order div and number
 #num {
   background-color: #90B9C9;
   border-radius: 5%;
-  padding: 6px 8px;
+  padding: 2px 6px;
+  color: white;
 }
 
+// // song category boxes
 #explicit {
-  padding: 7px;
-  width: 70px;
+  padding: 4px;
+  width: 60px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #DDDDDD;
   border-radius: 3%;
   vertical-align: middle;
   margin: 3px;
   font-size: 8px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
+// time display
 #badge-custom {
   background-color: white !important;
   color: black;
 }
 
-#type {
-  /*height: 16px;*/
-  padding: 3px;
-  width: 80px;
-  background-color: #DDDDDD;
-  border-radius: 3%;
-  vertical-align: middle;
-}
+// song category boxes
+// #type {
+//   padding: 3px;
+//   width: 80px;
+//   background-color: #DDDDDD;
+//   border-radius: 3%;
+//   vertical-align: middle;
+// }
 
-#category1 {
-  text-align: center;
-  font-size: 9px;
-  font-weight: bolder;
-  vertical-align: middle;
-}
-#category2 {
-  font-size: 9px;
-  text-align: center;
-  font-weight: bolder;
-  vertical-align: middle;
-}
+// song title
 #songname {
   color: #0085B2;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
-#songtime {
-  font-weight: 1000;
-  color: black;
-}
-
+// customizing songlist panel on-hover background color and text changes
 #songlist {
   li {
+      background-color: #f0f3f5;
+      #badge-custom {
+        background-color: #f0f3f5 !important;
+      }
     &:hover {
       background-color: #0085B2;
       #songname,  #num, #badge-custom {
@@ -176,6 +181,7 @@
   }
 }
 
+// customizing tooltip for hover on star favorite function
 div.tooltip-inner {
   color: white;
   background-color: darkgrey;
@@ -186,6 +192,9 @@ div.tooltip-arrow {
   border-top-color: darkgrey !important;
 }
 
+// toggle class for star (see tune.js page)
 .yellow-star {
   color: #D9D900 !important;
 }
+
+// CAROUSEL/PANEL/BUTTON/TOGGLES CUSTOMIZATION

@@ -72,9 +72,9 @@ function tableFill(value){
           <div class="col-sm-6 text-center">
             <span id="num">${value.song_order}</span>
           </div>
-          <div class="col-sm-6 text-center set-padding-0" id="star">
+          <div class=" text-center set-padding-0" id="star">
             <a href="#" data-placement="top" title="MARK AS FAVORITE" data-toggle="tooltip">
-              <i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 18px"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #DDDDDD; font-size: 20px"></i>
             </a>
           </div>
       </div>
